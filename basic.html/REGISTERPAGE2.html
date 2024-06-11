@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>sign up</title>
+
+
+            <script>
+
+                function loginValidation() {
+                
+                var uname = document.myform.uname.value;
+                var password = document.myform.password.value;
+                var phoneno = document.myform.phoneno.value;
+
+                if(uname == null || uname ==""){
+                    alert("please enter name")
+                    return false;
+                } 
+
+                else if(password.length<6){
+                    alert("password must be 6 letters")
+                    return false;
+                }
+                else if(phoneno.length<10){
+                    alert("phone number is minimum 10 digits")
+                    return false;
+                }  
+            }
+                </script>
+            </head>
+
+            
+
+
+    <style>
+        
+        
+        @media screen and (min-width:320px )  {
+
+               body {
+                    background-color: aqua;
+               }
+        }   
+        
+          @media Screen and (min-width:768px) and (max-width:1024px){
+              body {
+                    background-color: rgb(177, 48, 48);
+              }
+          }
+        
+        @media Screen and (min-width:1224px) {
+              body {
+                    background-color: rgb(48, 151, 8);
+              }
+          }
+          @media Screen and (min-width:1824px) {
+              body {
+                    background-color: rgb(101, 51, 208);
+              }
+          }
+
+</style>
+    <font face="impact" size"15" color="red"><h1>ANIME WORLD......</h1></font>
+    <h2> <a href="REGISTERPAGE.html">LOGIN</a></h2>
+
+
+    <div>
+        <center>
+            
+            
+            <body>
+                <div class="loginBox">
+                    <img class="user" src="user.png">
+            
+            
+            <form name="myform" action="HOMEPAGE.html" onsubmit="return loginValidation(this)">
+
+                
+        <link rel="stylesheet" href="register1.css">
+            REGISTER HERE <br>
+            <br>
+            User Name: <input type="text" name="uname" placeholder="user name" required autofocus> <br>
+            <br>
+            Password: <input type="password" name="password" placeholder="password" required> <br>
+     <br>
+     <br>
+        GENDER :
+        <select name="GENDER">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+        <br>
+        <BR>*+
+        TYPE OF ANIMES :
+       <select name="anime">
+            <option value="ACTION">ACTION</option>
+            <option value="ADVENTURES">ADVENTURES</option>
+            <option value="ROMANTIC">ROMANTIC</option>
+            <option value="COMEDY">COMEDY</option>
+            <option value="DRAMA">DRAMA</option>
+            <option value="ECCHI">ECCHI</option>
+            <option value="OTHERS">OTHERS</option>
+            </select>
+        <br>
+        <br>
+        PHONE NUMBER <br>
+        <input type="number" name="number" placeholder="Phone number" required> <br>
+        <br>
+
+
+        <BR>
+        ENTER EMAIL: <br>
+        <input type="email" name="email" placeholder="EMAIL" required>@<br>
+        <br>
+        
+        <BR>
+        <br>
+        ABOUT YOURSELF <br>
+        <textarea name="mytest" cols="35 row=45">
+            Textarea.....
+        </textarea><br>
+        <br>
+        <button><input type="submit" value="submit"></button><br>
+        </form>
+    </body> 
+    </center>
+    </div>
+    </html>
+</html>
